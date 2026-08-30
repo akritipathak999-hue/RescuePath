@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RescuePath - AI Emergency Response System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <img src="https://img.icons8.com/fluency/96/ambulance.png"
+             alt="Ambulance">
+
+        <h1>🚑 RescuePath</h1>
+
+        <p id="datetime"></p>
+
+        <h2>AI Emergency Response System</h2>
+
+        <p class="golden-hour">
+            🚨 Every Second Matters During the Golden Hour
+        </p>
+
+        <p><b>Saving Lives with AI 🚑</b></p>
+
+        <p><b>Team:</b> RescuePath</p>
+
+
+        <!-- System Status -->
+        <div class="statusCards">
+
+            <div class="card">
+                <h3>🤖 AI</h3>
+                <p>ACTIVE ✅</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 GPS</h3>
+                <p>READY ✅</p>
+            </div>
+
+            <div class="card">
+                <h3>🚑 Rescue</h3>
+                <p>ONLINE ✅</p>
+            </div>
+
+        </div>
+
+
+        <!-- Sensor Status -->
+        <div id="sensorBox">
+
+            <h3>📡 Sensor Status</h3>
+
+            <p id="sensorStatus">
+                🟢 Monitoring...
+            </p>
+
+            <p>MPU6050: ✅ Active</p>
+
+            <p>Vibration Sensor: ✅ Active</p>
+
+        </div>
+
+
+        <!-- Impact Analysis -->
+        <div id="impactBox">
+
+            <h3>📊 AI Impact Analysis</h3>
+
+            <p id="impact">
+                Waiting for sensor data...
+            </p>
+
+        </div>
+
+
+        <!-- Emergency Timeline -->
+        <div id="timelineBox">
+
+            <h3>⏱️ Emergency Timeline</h3>
+
+            <div id="timeline">
+                Waiting for accident detection...
+            </div>
+
+        </div>
+
+
+        <!-- Accident Detection -->
+        <button onclick="detectAccident()">
+            🚨 Accident Detected
+        </button>
+
+
+        <!-- AI First Aid -->
+        <h3>🤖 AI First Aid Assistant</h3>
+
+        <p id="output">
+            Press the accident button or use voice assistance
+            to receive emergency guidance.
+        </p>
+
+
+        <!-- Voice Assistant -->
+        <button onclick="startListening()">
+            🎤 Talk to AI
+        </button>
+
+        <p id="voice"></p>
+
+
+        <!-- Location -->
+        <h3>📍 Live Location</h3>
+
+        <p id="location">
+            Location not available.
+        </p>
+
+        <button onclick="getLocation()">
+            📍 Get My Location
+        </button>
+
+
+        <!-- Emergency Report -->
+        <button onclick="generateReport()">
+            📄 Generate Emergency Report
+        </button>
+
+        <div id="report"></div>
+
+
+        <!-- Nearby Hospitals -->
+        <button onclick="findHospital()">
+            🏥 Find Nearby Hospitals
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
